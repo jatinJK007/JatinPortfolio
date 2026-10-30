@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jatin Kumar — Mobile Engineer (Android · Flutter · Security)</title>
+  <meta name="description" content="Portfolio of Jatin Kumar, a mobile engineer specialising in Android/Kotlin, Flutter/Dart, offline-first architecture, hardware-backed Keystore security and high-speed mobile apps." />
+  
+  <!-- Open Graph / Meta -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Jatin Kumar — Mobile Engineer (Android · Flutter · Security)" />
+  <meta property="og:description" content="I build mobile apps where speed and security are not afterthoughts. Android, Flutter, hardware-backed keys, and sub-200ms offline-first performance." />
+  <meta name="theme-color" content="#0f0f0f" />
+
+  <!-- Google Fonts: Syne, Inter, JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@600;800&family=Inter:wght@300;400;500&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet" />
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            background: 'hsl(0, 0%, 6%)',
+            foreground: 'hsl(30, 12%, 94%)',
+            coral: {
+              DEFAULT: 'hsl(8, 92%, 62%)',
+              hover: 'hsl(8, 92%, 56%)',
+              dim: 'hsla(8, 92%, 62%, 0.12)',
+            },
+            muted: 'hsl(30, 4%, 58%)',
+            border: 'hsl(0, 0%, 16%)',
+            card: 'hsl(0, 0%, 9%)',
+          },
+          fontFamily: {
+            syne: ['Syne', 'sans-serif'],
+            inter: ['Inter', 'sans-serif'],
+            mono: ['JetBrains Mono', 'monospace'],
+          },
+          letterSpacing: {
+            label: '0.24em',
+            tightest: '-0.04em',
+            tighterH2: '-0.02em',
+          },
+        },
+      },
+    };
+  </script>
+
+  <style>
+    /* Base CSS variables and resets */
+    :root {
+      --background: hsl(0, 0%, 6%);
+      --foreground: hsl(30, 12%, 94%);
+      --primary: hsl(8, 92%, 62%);
+      --primary-foreground: hsl(0, 0%, 6%);
+      --muted-foreground: hsl(30, 4%, 58%);
+      --border: hsl(0, 0%, 16%);
+      --card: hsl(0, 0%, 9%);
+    }
+
+    body {
+      background-color: var(--background);
+      color: var(--foreground);
+      font-family: 'Inter', sans-serif;
+      font-weight: 300;
+      line-height: 1.7;
+      overflow-x: hidden;
+    }
+
+    /* Custom outline focus for accessibility */
+    a:focus-visible, button:focus-visible {
+      outline: 2px solid hsl(8, 92%, 62%);
+      outline-offset: 4px;
+    }
+
+    /* Marquee animation */
+    @keyframes marqueeScroll {
+      0% { transform: translateX(0%); }
+      100% { transform: translateX(-50%); }
+    }
+    .animate-marquee {
+      display: flex;
+      width: max-content;
+      animation: marqueeScroll 30s linear infinite;
+    }
+    .animate-marquee:hover {
+      animation-play-state: paused;
+    }
+  </style>
+
+  <!-- JSON-LD Person block -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Jatin Kumar",
+    "jobTitle": "Mobile Engineer",
+    "email": "jatinkumarjkk5@gmail.com",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Delhi NCR",
+      "addressCountry": "India"
+    },
+    "knowsAbout": [
+      "Android",
+      "Kotlin",
+      "Flutter",
+      "Dart",
+      "Mobile Security",
+      "Hardware-backed Keystore",
+      "Offline-First Architecture",
+      "Room",
+      "Drift"
+    ],
+    "sameAs": [
+      "https://github.com/jatinjk007",
+      "https://www.linkedin.com/in/kumarjatinjk",
+      "https://play.google.com/store/apps/details?id=com.jatinkumar.sentryone",
+      "https://play.google.com/store/apps/details?id=com.application.LegalSathi"
+    ]
+  }
+  </script>
+
+  <!-- Module Import Map -->
+  </head>
+<body class="selection:bg-coral selection:text-black antialiased">
+  <div id="root"></div>
+  <script type="module" src="./index.tsx"></script>
+<script type="module" src="/index.js"></script></body>
+</html>
